@@ -1,0 +1,1643 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comforty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bc3-f8_R.css">
+  </head>
+  <body>
+    <header>
+      <!-- Top Section Start   -->
+      <section class="bg-top">
+        <div class="container flex justify-between items-center py-4">
+          <!-- Left Side Start -->
+          <div
+            class="text-sm text-white capitalize flex items-center gap-2 cursor-pointer font-thin opacity-75 hover:opacity-100 hover:transition"
+          >
+            <i class="fa-solid fa-check"></i>
+            <p>Free Shipping On All orders over $50</p>
+          </div>
+          <!-- Left Side End -->
+
+          <!-- Right Side Start -->
+          <div class="flex items-center gap-6 text-white cursor-pointer">
+            <div class="opacity-75 hover:opacity-100 hover:transition">
+              <select
+                name="language"
+                id="language"
+                class="bg-transparent border-none"
+              >
+                <option value="eng" class="bg-top">Eng</option>
+                <option value="bng" class="bg-top">Ban</option>
+              </select>
+            </div>
+            <div class="opacity-75 hover:opacity-100 hover:transition">
+              <a href="#">Faqs</a>
+            </div>
+            <div
+              class="flex items-center gap-1 capitalize opacity-75 hover:opacity-100 hover:transition"
+            >
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%3e%3cg%20opacity='0.7'%20clip-path='url(%23clip0_1_1249)'%3e%3cpath%20d='M7.99998%2014.6666C11.6819%2014.6666%2014.6666%2011.6818%2014.6666%207.99992C14.6666%204.31802%2011.6819%201.33325%207.99998%201.33325C4.31808%201.33325%201.33331%204.31802%201.33331%207.99992C1.33331%2011.6818%204.31808%2014.6666%207.99998%2014.6666Z'%20stroke='white'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M8%205.33325V7.99992'%20stroke='white'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M8%2010.6667H8.00615'%20stroke='white'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_1_1249'%3e%3crect%20width='16'%20height='16'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="help" />
+              <span>need help</span>
+            </div>
+          </div>
+          <!-- Right Side End-->
+        </div>
+      </section>
+      <!-- Top Section End  -->
+
+      <!-- Top Search Section Start  -->
+      <section class="bg-bgSecond">
+        <div
+          class="container px-6 md:px-0 flex flex-col gap-2 pt-6 lg:flex-row lg:justify-between lg:items-center lg:gap-6 py-6"
+        >
+          <!-- Logo Start  -->
+          <div class="flex items-center justify-between lg:flex-none lg:w-auto">
+            <a class="w-full h-11 mx-auto lg:mr-6 cursor-pointer">
+              <img src="data:image/png;base64,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" alt="Comforty logo" />
+            </a>
+
+            <!-- User Action button mobile view Start -->
+            <div class="flex items-center shrink-1 gap-2 lg:hidden">
+              <div>
+                <a
+                  href="#"
+                  class="group rounded-lg flex items-center justify-center w-24 h-11 bg-white cursor-pointer hover:text-hoverMain transition"
+                >
+                  <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%3e%3cpath%20d='M2.52084%202.97925L4.42751%203.30925L5.31026%2013.8262C5.34417%2014.24%205.53287%2014.6259%205.8387%2014.9067C6.14454%2015.1876%206.54503%2015.3428%206.96026%2015.3414H16.9611C17.3587%2015.3419%2017.7431%2015.1987%2018.0435%2014.9383C18.344%2014.678%2018.5403%2014.3179%2018.5964%2013.9242L19.4673%207.91275C19.4905%207.75287%2019.4819%207.58999%2019.4422%207.43341C19.4024%207.27684%2019.3321%207.12964%2019.2354%207.00023C19.1387%206.87083%2019.0174%206.76175%2018.8785%206.67925C18.7396%206.59675%2018.5858%206.54244%2018.4259%206.51941C18.3673%206.513%204.73368%206.50841%204.73368%206.50841'%20stroke='%23272343'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M12.9479%209.89551H15.4899'%20stroke='%23272343'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.55786%2018.5195C6.62508%2018.5166%206.69219%2018.5274%206.75515%2018.5511C6.81811%2018.5748%206.87562%2018.6111%206.9242%2018.6576C6.97279%2018.7042%207.01145%2018.7601%207.03787%2018.822C7.06428%2018.8838%207.0779%2018.9504%207.0779%2019.0177C7.0779%2019.085%207.06428%2019.1516%207.03787%2019.2135C7.01145%2019.2754%206.97279%2019.3313%206.9242%2019.3778C6.87562%2019.4243%206.81811%2019.4606%206.75515%2019.4843C6.69219%2019.5081%206.62508%2019.5188%206.55786%2019.5159C6.42942%2019.5104%206.30808%2019.4555%206.21914%2019.3627C6.13021%2019.2699%206.08057%2019.1463%206.08057%2019.0177C6.08057%2018.8892%206.13021%2018.7656%206.21914%2018.6727C6.30808%2018.5799%206.42942%2018.525%206.55786%2018.5195Z'%20fill='%23272343'%20stroke='%23272343'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M16.8988%2018.5195C17.0312%2018.5195%2017.1583%2018.5722%2017.252%2018.6659C17.3457%2018.7595%2017.3983%2018.8866%2017.3983%2019.0191C17.3983%2019.1516%2017.3457%2019.2787%2017.252%2019.3724C17.1583%2019.4661%2017.0312%2019.5187%2016.8988%2019.5187C16.7663%2019.5187%2016.6392%2019.4661%2016.5455%2019.3724C16.4518%2019.2787%2016.3992%2019.1516%2016.3992%2019.0191C16.3992%2018.8866%2016.4518%2018.7595%2016.5455%2018.6659C16.6392%2018.5722%2016.7663%2018.5195%2016.8988%2018.5195Z'%20fill='%23272343'%20stroke='%23272343'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="cart" class="pl-3" />
+                  <p class="mx-1 text-sm font-medium">Cart</p>
+                  <p
+                    class="flex items-center justify-center size-5 rounded-full bg-[#007580] text-white"
+                  >
+                    2
+                  </p>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="rounded-lg flex items-center justify-center p-3 bg-white cursor-pointer hover:text-hoverMain transition"
+                >
+                  <i class="fa-regular fa-user"></i>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="rounded-lg flex items-center justify-center p-3 bg-white cursor-pointer hover:text-hoverMain transition"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- User Action button mobile view End -->
+          </div>
+          <!-- Logo  End  -->
+
+          <!-- Search Start  -->
+          <div
+            class="lg:grow cursor-pointer relative mb-4 lg:mb-0 lg:flex lg:justify-center lg:items-center"
+          >
+            <div class="relative w-full lg:w-96 lg:mx-auto">
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="w-full placeholder:gray-200 text-sm font-normal py-3 pl-4 border-none rounded-md focus:outline-none focus:ring-1 focus:ring-hoverMain text-gray-500"
+              />
+              <button
+                class="absolute top-1/2 transform -translate-y-1/2 right-4 text-sm"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Search End -->
+
+          <!-- User Action Btns Start  -->
+          <div
+            class="hidden lg:flex lg:items-center lg:justify-end gap-1 w-auto lg:flex-none lg:ml-6"
+          >
+            <div>
+              <a
+                class="group rounded-lg flex items-center justify-center px-4 h-11 bg-white cursor-pointer hover:text-hoverMain transition"
+              >
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='22'%20height='22'%20viewBox='0%200%2022%2022'%20fill='none'%3e%3cpath%20d='M2.52084%202.97925L4.42751%203.30925L5.31026%2013.8262C5.34417%2014.24%205.53287%2014.6259%205.8387%2014.9067C6.14454%2015.1876%206.54503%2015.3428%206.96026%2015.3414H16.9611C17.3587%2015.3419%2017.7431%2015.1987%2018.0435%2014.9383C18.344%2014.678%2018.5403%2014.3179%2018.5964%2013.9242L19.4673%207.91275C19.4905%207.75287%2019.4819%207.58999%2019.4422%207.43341C19.4024%207.27684%2019.3321%207.12964%2019.2354%207.00023C19.1387%206.87083%2019.0174%206.76175%2018.8785%206.67925C18.7396%206.59675%2018.5858%206.54244%2018.4259%206.51941C18.3673%206.513%204.73368%206.50841%204.73368%206.50841'%20stroke='%23272343'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M12.9479%209.89551H15.4899'%20stroke='%23272343'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.55786%2018.5195C6.62508%2018.5166%206.69219%2018.5274%206.75515%2018.5511C6.81811%2018.5748%206.87562%2018.6111%206.9242%2018.6576C6.97279%2018.7042%207.01145%2018.7601%207.03787%2018.822C7.06428%2018.8838%207.0779%2018.9504%207.0779%2019.0177C7.0779%2019.085%207.06428%2019.1516%207.03787%2019.2135C7.01145%2019.2754%206.97279%2019.3313%206.9242%2019.3778C6.87562%2019.4243%206.81811%2019.4606%206.75515%2019.4843C6.69219%2019.5081%206.62508%2019.5188%206.55786%2019.5159C6.42942%2019.5104%206.30808%2019.4555%206.21914%2019.3627C6.13021%2019.2699%206.08057%2019.1463%206.08057%2019.0177C6.08057%2018.8892%206.13021%2018.7656%206.21914%2018.6727C6.30808%2018.5799%206.42942%2018.525%206.55786%2018.5195Z'%20fill='%23272343'%20stroke='%23272343'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M16.8988%2018.5195C17.0312%2018.5195%2017.1583%2018.5722%2017.252%2018.6659C17.3457%2018.7595%2017.3983%2018.8866%2017.3983%2019.0191C17.3983%2019.1516%2017.3457%2019.2787%2017.252%2019.3724C17.1583%2019.4661%2017.0312%2019.5187%2016.8988%2019.5187C16.7663%2019.5187%2016.6392%2019.4661%2016.5455%2019.3724C16.4518%2019.2787%2016.3992%2019.1516%2016.3992%2019.0191C16.3992%2018.8866%2016.4518%2018.7595%2016.5455%2018.6659C16.6392%2018.5722%2016.7663%2018.5195%2016.8988%2018.5195Z'%20fill='%23272343'%20stroke='%23272343'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="cart" class="size-3" />
+                <p class="mx-1 text-xs font-medium">Cart</p>
+                <span
+                  class="flex items-center justify-center size-4 rounded-full bg-[#007580] text-white"
+                  >2</span
+                >
+              </a>
+            </div>
+            <div>
+              <a
+                href="./signin.html"
+                class="rounded-lg flex items-center justify-center p-3 bg-white cursor-pointer hover:text-hoverMain transition" target="_blank"
+              >
+                <i class="fa-regular fa-user"></i>
+              </a>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="rounded-lg flex items-center justify-center p-3 bg-white cursor-pointer hover:text-hoverMain transition"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- User Action Btns End -->
+        </div>
+      </section>
+      <!-- Top Search Section End  -->
+
+      <!-- Menu Section Start  -->
+      <section>
+        <nav class="font-inter text-sm font-medium py-5">
+          <!-- Desktop/Larger Screen Menu Start  -->
+          <div class="container flex justify-between items-center">
+            <!-- Catagories and Menu Start -->
+            <div class="flex items-center gap-8">
+              <div class="px-6 py-4 border rounded-md">
+                <a href="#"
+                  >&#9776;
+                  <span class="capitalize ml-4">All Categories</span>
+                </a>
+              </div>
+              <div>
+                <ul class="flex items-center gap-8 text-gray-500 capitalize">
+                  <li class="text-hoverMain"><a href="#home">home</a></li>
+                  <li class="hover:text-hoverMain transition">
+                    <a href="#shop">shop</a>
+                  </li>
+                  <li class="hover:text-hoverMain transition">
+                    <a href="#product">product</a>
+                  </li>
+                  <li class="hover:text-hoverMain transition">
+                    <a href="#pages">pages</a>
+                  </li>
+                  <li class="hover:text-hoverMain transition">
+                    <a href="#about">about</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Catagories and Menu End -->
+
+            <!-- Contact  -->
+            <div class="flex items-center gap-2">
+              <p class="font-normal text-gray-500 capitalize">contact:</p>
+              <a href="tel:(808) 555-0111" class="text-black">(808) 555-0111</a>
+            </div>
+          </div>
+          <!-- Desktop/Larger Screen Menu End  -->
+        </nav>
+      </section>
+      <!-- Menu Section End  -->
+
+      <!-- Hero section Start  -->
+
+      <!-- Hero Image Start  -->
+      <section class="px-8">
+        <div class="bg-bgSecond rounded-b-xl">
+          <div
+            class="container pt-20 pb-11 flex flex-col gap-12 md:flex-row-reverse md:items-center md:justify-between"
+          >
+            <!-- Hero image start  -->
+            <div class="md:w-1/2">
+              <div class="relative md:pt-16 pl-16">
+                <img src="/assets/hero_product-CabKCG-Q.png" alt="hero product" />
+                <div
+                  class="absolute left-2/3 top-20 h-32 w-36 bg-white rounded-full flex flex-col items-center justify-center z-30"
+                >
+                  <h3 class="text-4xl font-bold text-[#F05C52]">54%</h3>
+                  <p class="font-medium tracking-wide text-[#272343]">
+                    Discount
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Hero image end  -->
+
+            <!-- Hero Content Start  -->
+            <div class="text-left pl-16 mt-16 md:w-1/2">
+              <h5 class="text-[#272343] text-sm tracking-wider mb-4 uppercase">
+                welcome to chairy
+              </h5>
+              <h2
+                class="text-[#272343] text-6xl font-bold drop-shadow-2xl mb-6 capitalize"
+              >
+                Best Furniture Collection for your interior.
+              </h2>
+              <div
+                class="text-white font-semibold capitalize px-6 py-3.5 bg-hoverMain inline-block rounded-lg cursor-pointer"
+              >
+                <a href="#"
+                  >shop now <span><i class="fa-solid fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </div>
+            <!-- Hero Content End -->
+          </div>
+        </div>
+
+        <div class="container bg-white mt-8 lg:-translate-y-1/2">
+          <!-- Servies Container Start  -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-hidden items-center justify-around shadow-xl py-12 rounded-md gap-8"
+          >
+            <!-- Single Service Start  -->
+            <div class="flex gap-4 items-center justify-center h-14">
+              <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASGSURBVHgBzZrNVttGFMfvSISy6YlLT9aVIQe8K29QA110V/cJME9Q9wkwTxD8BLGfoM6ui8aIN4CdzQGs7Gmj7JIQzeR/ZQvESLI+LAffc7A00mj0u3fu3LkzQtACpLa511QkDnBqKaL25fXbHpUsgkoUH1iJI7RqoWgD+h1ewAo4ZSswN7hl1SurhvGnEKKFYgWAXcPzjoeO7fD9mlW3pGm2y1agMPhjYEVSiZ4pvZMAWJeyFcgNrgOjiUoekIgCSnUNudobOv84lEMyg+vAQhidj1++nKzBPYpYkhVQptkipX5HY5RXgVRw3YdxPGZgx7FdHaSoArSy0lRSHkABazJGnh2nKSCSG/zN8oy7liEYxHcJGz+NNKg4BQBylgbCBlozjYZSdJRFAREHLM276YuVG7gEWziPf87jy5OwOluBe/Day3pdKfMIp3UAw1JiplWz+qfmCtx3dhZXSFNA3Fcg8RqnLiq0soapPP5Z1Jcf+OgVRzAcm8xn8o31H6oNGGOHb0CTnR/XN9z/3o8v0hq8dR339v8b+/vnP/WeGWIEczbJkG08b714vn1x6165el2023mxXn03q24UmtMHUfMvKHWBNmzjoYo4F55XhUZngO9ub+6Ptzb3DyiDsP8Prwfd0c2gCmc4FErVlXnHz7/mMaPXz1KXgbc39seBJyCa7eJo39Pyz9bGXhs3fhldv931HyphlssywOLqotgnf5xF0wcY8xTj6ezyZtA24hriigBtxvVAnAVj28jRAx892WfIaRFuKzr8bjAcJqUQsRaPWKSEaVqzqi2Eh4mMzrX04Rw/dXDEzi+pFtcl3AN4SQ+tNmHB0yQLxrYx7QHg/cFlhN7T70xzjKDQYgt/8iT3TmZ3zAQeVmB49W9bSLnrK5DiArrw7AhfP+eeVUgdcKnCwNymnkKkyQoVkKnftfmPXQC9fIT04APKrbj64fRB0d0ZLjUMJXmSo7zAc4GHhV2AHgYWwfp8rjiKcJnTB8AeGJiNg/SBSpC5wWOkDxd6BRdqckFM0gfMdoNS152lg2MQcxzuw/J/YxCL0fWgQQuQRVh8IlJ+UIZQeR5RwvgZ4SZT3cWBZ5RHCxWleBnYyfLck4NzLJ8stmnmYluXJwOXJFxxv1DxTr5JHC9DgkFMBSUyc9Ze/lrPms4+pUTA4W07efPxp5AI+OhqcFJ0QfEtJeoqfrK0RnH5OLsRLYlEwKX41A4yvrACCFdv5CTOLoVEosrl+LSJjM/mjI/zje2Nvb+GNwNOjFq0RBK/dAstu0xT2rSE8mDxGDeYpqxLKb7FkeA7WAvuLGsE8bcqsN4kXv0LMeZrPjhbdhlDoLa3Qry3EmyTxGx6lvPlYKu620VXKiwgDvM8l/ZpJpAZ28xRBT573pusyVBe8LyfZlI39ovuqWQFT/rSkWagVPCwAuHtYlikb8qVTpICaeBFgXODJyiQuC+YBD4vcGHwR0rM2NjUwfVPM0WBSwGfpQDnPAxueKvHSZ9maA4pBTwQbWMzAKukfZopIqWCBxJSgMNodxH/hPAV4nfFl6QtfvQAAAAASUVORK5CYII=" alt="" />
+              </div>
+              <div>
+                <h5 class="text-lg font-medium capitalize text-[#272343]">
+                  Discount
+                </h5>
+                <p class="text-base font-normal text-gray-500">
+                  Every week new sales
+                </p>
+              </div>
+            </div>
+            <!-- Single Service End  -->
+
+            <!-- Single Service Start  -->
+            <div class="flex gap-4 items-center justify-center h-14">
+              <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAnCAYAAAC/mE48AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUvSURBVHgB3VpdUuNGEO4eeUPe4j1BxE+AykucGwjYVOUt5gQLJwg+gc0J2D0B5ATAW6rCj3KCkDfDAqsbrB9DFqn3m7HGCCGQhC2j2q8KpJFGo57WdH/dPWbX9ZozynkrJK+pTmD+eHF1/AdVDF6aX9vHsU31hH9+dbxCFaJBw8kPmKRDNYIQ7eD7tKhiNOLjoH91skc1wtLcWpeYXKoYDao5FudWe7mdmM/gLw7oGai9Api5W6Tf4tybs4vro5+pJOqvAJLNvD4i1GWm1tLc6tb59ck7KoFKFbC84HmRON+PQ2dFfNPywptARE6xXH5Dsz4KEFH7TNQE1bY5fNXpB38GVBJFfEAURZg7DbBePMQ1bhD4ARVEtQog3mSRHUjXFudze3F+bU+Fr7bLKKKoD7D4RqkNHHpF+yuqENozwyZnjR2LBFgNG1DEqbbVomPoZ7P+iEdxyyDZhsLeUgnoSBAxBwWIuGazOhg7jpRH44LZhQKSwgV4cecx+kIc8FHHAZCLHxsSsp/i4DGHK/1L30+3qQByTcDYMXOTJg+tEER79Cz+NhA5hGK9MHJ0NOs/aBdArgKY1TpJ5NKYEOHvcNi6i+5gEqxyKe4p3ETR3oyjumq47LeSbTjDHpzhIG+MXAX0L498GhPw5Jqntd1jJcmAWG2fXx6Xoqss6Ali2Z/h1NOmGpuBaX/bIJ1H+HljVB4HSOTsJmL69zdhhC9zkvtlLArQoBkriho76Hto2yJOF6vgLG8VVEuDd5P3OQw3+yX42aIoDTJLK5U9ejOO8wkr4gDO9uD/MDzMUkalCmDFxsbHMaMioXAWEBp5eBaRIbfhbNtQBmUpI5cGXwpFaLAIEHxpRmjHyhixGSa9B0V0ap8MjYs4zjBUm1QGE2/MqMbgq1dAElYZy8gXxFH/YIVtVBoK1xXGGQtrH9C0K6C5PL+6QTUCqtRN7QInIleogn4wdMQ//vBLK4rClh1/pABkbrtUQ0xELkf01zZl/1uRXU7Q5agoioLCe6oREDn+rr025NqmMaGU8u258O0mRaptx//qaTBv/NIsoMNbEuWaBkdB0bRzWigrX2EF2LgeBUh3dFFMdIWsDmHuCysirlvsIOu8C4dj+bDEe8m65LL7qyv82dUZaSEaRMm5i+Ti1Mb12i5j2/Tx5+p7CDJKVWImCf1uLQPyhlaWfLChPVuFMopSt/vDJ/nQ+oAnt8asJ8YLVtJx/dICBhbeoQlvr8VbY81CZXEy7zd901VkTaN2LBoqxItv+TdhuM62jJT3Esy+c3559M4OimRjYMtZWCE9ZGOlipeTBt6/3b886enzxXkPIa9D2fIJTIJHJmE8rJmQZO/D2XQU2nptChBzq7rKa5aTXmYX1yc9s8WO1JNegE5HdBaGszrCS8oHHIBF1hPyPWC7XIpJ02TctkhfnzqdpunStu399PU0reY7QaEA/12txfiKn7irKzDGqw77SuFKz6QgysT0NJKPhzKZe3B+o45DpTyQL1cBItHf+ogNB7Os9A8WbG0e5+YavKphAMEuLU0ZHIVp+baG+xC0pfN9fc3mE5JRgc41Aey7eWbfDdqLlFr58OGve5PUFMSxpq0d0hQxSm21lxfppDdHTfwijqa9ZpZ8hcJMKKEHJVgvfwBV+vHTusDgDc/vWGLaSFAxPSZfkiWSKBxnGz7FNrTe4bl/x9BK57k/UJgUdLUn3od079+xZfjsj1M60dAmgd1YFBz5E4qe/05i32CSMCYbyU/6XMv33+3tk6XxL+DxvF2DBOylAAAAAElFTkSuQmCC" alt="" />
+              </div>
+              <div>
+                <h5 class="text-lg font-medium capitalize text-[#272343]">
+                  free delivery
+                </h5>
+                <p class="text-base font-normal text-gray-500">
+                  100% Free for all orders
+                </p>
+              </div>
+            </div>
+            <!-- Single Service End  -->
+
+            <!-- Single Service Start  -->
+            <div class="flex gap-4 items-center justify-center h-14">
+              <div>
+                <img src="data:image/png;base64,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" alt="" />
+              </div>
+              <div>
+                <h5 class="text-lg font-medium capitalize text-[#272343]">
+                  Great support 24-7
+                </h5>
+                <p class="text-base font-normal text-gray-500">
+                  We care your experiences
+                </p>
+              </div>
+            </div>
+            <!-- Single Service End  -->
+
+            <!-- Single Service Start  -->
+            <div class="flex gap-4 items-center justify-center h-14">
+              <div>
+                <img src="data:image/png;base64,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" alt="" />
+              </div>
+              <div>
+                <h5 class="text-lg font-medium capitalize text-[#272343]">
+                  secure payment
+                </h5>
+                <p class="text-base font-normal text-gray-500">
+                  100% Secure Payment Method
+                </p>
+              </div>
+            </div>
+            <!-- Single Service End  -->
+          </div>
+          <!-- Servies Container End -->
+        </div>
+      </section>
+    </header>
+    <!-- Hero Image End  -->
+    <!-- Hero section End  -->
+
+    <!-- Companies Section Start  -->
+    <section>
+      <div
+        class="container px-6 lg:px-0 grid grid-cols-2 items-center justify-between md:grid-cols-3 lg:grid-cols-7 gap-4"
+      >
+        <div>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAABXCAYAAAB1PQlRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAiySURBVHgB7ZoJbBVVF8f/973SQql8fgLx+6KfnxgVTdQouATcGpcCRYIJ4m5MFNS4RHGJGtGQaNQYl+AWNzTGBRRRUSm4g4qKKyoq7iiouBeBtpa+uf7PnXnz5r3OlFfoe/Ul59dM586du82Zc889584DFEVRFEVRFEVRFEVRFEVRFEVRFEVRFEVRegk7Eekw3Yg2OwbLXBow6CVSqGDsCPTDesy1ozEqyKrhE9W4VCOm2CMwnUctykxFCxVb4RCq5Cg+xWxq6MEuz8JQY6cydQM8HId2bIcy02tTpKeglp5Iod4fXIqScOYjw+Mvpg408/E+ykzFCrW9EXv2sTgguDyCT/Ivno9FB01CFV5hei6F+oHcbP0LT9S+hO9RJqpQofQBRlOQ10SyppsmfCsJmoKveG9SVmWq++JHnuagTFSsUDnR53CSf+nSBqfy/yF2HO1qBtXU0J14fQ/Pz8rttIfXUUYq2qY6t6kR5zF5HY8/eAzmsYbHFjzWUfDHmWfQhDJT2av/WNTz/43wBdrg8gx+4XEyUx7/ZtkG7IIyU7nTX0jjHS5MN1E1ZlEjl9KVcph5eJBeQS2FuwWew2dQNh0K9U0eZVuQFKWy6dHVn/5hDcPCOlrqaqY8tGGdeY7R+aa0Vc9W+uHfdEhlMW0xT2Etehg7nK0Pcp5CDW1zO8PeZjPbRWObhXEbDh4eZrp/8bWwhIvBVDcwv/7VTO7NY3seA+B8c0cb/Z4veDxAB+dB85pbpfOwY7GI9cUV+gKtmOAya3El6xzFfv4LWUwNa1ss53k65uEx44eifv3RGEqx39ppjB4mmwVYgRj48rdlncvZSj0vpQ/xbTvY/k9MP8bjJgYSq2Pq1bDMQywrHsU3DIHHBc9wGPs7k8n/s90/DAsOZsEV7lGKwe98HDtdEHQ0gNdriqi5jOWO5sv4tGCga5lfx2QzzyM5uKd43jGxd/D+CrbzCTXLf6CRzF3cqaTB7uxrWV5lbrZgDCbzwa+H78sm8TtLHsP6L+TV9xVoCZO7QV6b5Uwyrq3J0XIpbODgjIuLV8cetkBgBjOzAnWX8/EnTyt4tPKeDOJO+L6jRDSrIjV34/V0JDOA958MBWqomaBegi6RDTVTzNV4zofLw1p9qF2GkZUJoquuGEttMk6rfYFaN24Z66XBuLMmZiseM+3hLjJLIsW2bkOBQMmajdpUatIMVj4F/iN9hy2pAQ85QebKjMf/KL7V5l2+omj+aXzklZjCetfCF4gIZwRfypJI+1lNzbKMOnAOX9ui7DRnmf1Z5m4mdw3G0cyehtFef5PXX2POLBRqKjV6V7b7RrDxIi3fTzWYZBZy5mXLjMMQCRh4b9+gjcfZxoTwfr6mBpmy2cg6srfg0YSlsaHLiIqDnMAKxwaVN9CEX1woUNf3XKwsFKjLv4t5dbiFyY/CRwUOSu6QbRuGlguwMGo3ORsWM/8syGzwy21JS3sCuseZoUBlPBmcFRWo6+dpvqSM07z2oJ/xzv52hUz/n3AyFWUOx/2hmLdEofKtDOLpKmRtbQpzWWkWuglXUxHE0ux1h+cWhiTmF9rBkHlYyP9v5RrGoSgSt8B43NXK8WiiV9KGT9yi6JPmc9cjCZm52+KyQoVKDlOplay0S1jZROxY3MDlW1ELp5jFXjyGBFM6w/Q6noeEHaZDzyCOp5E4fq4zhmGpDXb4Pa76xZJy9jyrcTIDvgqUJhabwY/sb4/gcufEdj284GZjAbFCpf0Zzgpn5zJwHTVoOZIGMRY78L1PY7mJfPq+ed5vdzxhg9+6uu15WJUK2qOAB6BIMhlsk05xXOGAaZK8zsLIDQMDI2W76ufzuMxOQqXGVVPj7nTC8Rtt4rJwLxKwozAs2LccFApQtNO46ZVmWtrpz+vNDjQo0LZs2tjcV9SNQYFGF0IZycAuK0RHavlZJnFAndcXobOmrscF/D88uBJ/bYp5I1ggCnARSdoFDoOCAchqfClzF9JJW+usZyvjohrnehyDzaSDWlMVPLBni4/UMhaZdFbD6Wez7gwKenVRlW2+r1pwz8Zl5wmVdmYnTosrwgppGuFn4lXcMdit5EOD8u0UZgPDyUJ/sYVeRI+EmFXI2dFUKj5aiiNtXaQkro8xBilez+Zq/SJKRP7q7+ER/venvaGn+Fv4lTKWZos9I5fLYwTaY9As1XFM9ZGsj4uubFhWNq99UvwbhhISCjX4Vr5XcCl25OKkaZ+lj5fnbFejlLQwiAAXRB/pd0axVennikDfjWSd5ExXiXBCdas3cG4k/xpOj482Vrl/Ok8zhzrzUQLoZ4oncn4ug/v5TXgV3cHmLba7Y2vc7n7hklScu2R22qZ9bqoKOrwDCP02saY7U3PvQ/IAb3Y/UjAM++D2DbaB6KqHRaw3g/dl86QN4sZYhrAW+6EYLC7ki9mbcc7PLrIG/gP/29PIyJxYyXl0ejTiKoo6hg/ruR8B9+VV2p7E7ZAGjreJVx8G/nQtz1tDwlAxNW9ytwB4G92kyo5xYdlhkTxxOY7vslbKuVDvy7TioC5ycbRx00nW+6mhS+Khe0iU5PFI1o9Pee8085L/fb9bTTOyo/adQ90U4Z0buHjyk6Az8l5P1J1KO3PYbaGKPsjUEqf712IPhpq/h2Nowky2caCbksj5kXn4rofspb7MGOsVJBHnovh5spc6lf7FCHojryGZbP8ZuvYdhTcZ68v9Sygs2SR5HkhYM6yru5htfBlzrz0clxdfv2d3/sVGDaRH4LkwtZ8zARY/0E9dbh53vxLpXCd/l+pIlm+GbPZW8YVn+BKr8B69ih+K6l+ep4FTeCRazbSNzxNqbl+ObR/2tJ0zVRkuh2nOAoOlfHktifUm8tm+RkfcJpLQ6z+mKBDqmOhebaVS2T+m+IeiQi0BKtQSoEItASrUEtD7QjVut0h+wCC+6CooiqIoiqIoiqIoiqIoiqIoiqIoiqIoiqL0In8DStatOFor4SgAAAAASUVORK5CYII=" alt="" />
+        </div>
+        <div>
+          <img src="data:image/png;base64,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" alt="" />
+        </div>
+
+        <div>
+          <img src="/assets/com_cib_bank-C85MTyVA.png" alt="" />
+        </div>
+        <div>
+          <img src="data:image/png;base64,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" alt="" />
+        </div>
+        <div>
+          <img src="data:image/png;base64,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" alt="" />
+        </div>
+
+        <div>
+          <img src="data:image/png;base64,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" alt="" />
+        </div>
+        <div>
+          <img src="data:image/png;base64,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" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Companies Section End  -->
+
+    <!-- Featured Products Section Start  -->
+    <section id="shop" class="px-6">
+      <div class="container mb-20">
+        <!-- Featured Products Heading Start  -->
+        <div class="mb-11 flex items-center justify-between">
+          <div class="text-2xl font-semibold text-[#272343]">
+            <h3 class="capitalize">Featurd products</h3>
+          </div>
+          <div class="flex items-center gap-8">
+            <div
+              class="size-11 bg-gray-200 rounded-full flex items-center justify-center hover:bg-hoverMain hover:text-white transition-all ease-in-out duration-300"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div
+              class="size-11 bg-gray-200 rounded-full flex items-center justify-center hover:bg-hoverMain hover:text-white transition-all ease-in-out duration-300"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Featured Products Heading End  -->
+
+        <!-- Featured products container start -->
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 justify-between items-center gap-6 lg:grid-cols-4"
+        >
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_1-D8DGpZj9.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#01AD5A] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                New
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_2-DgMZencq.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_3-Be0yhKw6.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_4-BnZtpbFX.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+          <!-- Featured products container end -->
+        </div>
+      </div>
+    </section>
+    <!-- Featured Products Section End  -->
+
+    <!-- Top Catagories Section Start  -->
+    <section class="px-6">
+      <div class="container mb-20">
+        <!-- Top Catagories Heading Start  -->
+        <div class="mb-11 flex items-center justify-between">
+          <div class="text-2xl font-semibold text-[#272343]">
+            <h3 class="capitalize">top Catagories</h3>
+          </div>
+          <div class="flex items-center gap-8">
+            <div
+              class="size-11 bg-gray-200 rounded-full flex items-center justify-center hover:bg-hoverMain hover:text-white transition-all ease-in-out duration-300"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div
+              class="size-11 bg-gray-200 rounded-full flex items-center justify-center hover:bg-hoverMain hover:text-white transition-all ease-in-out duration-300"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Top Catagories Heading End  -->
+
+        <!-- Top Catagories container start -->
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 justify-between items-center gap-6 lg:grid-cols-3"
+        >
+          <!-- Single product start -->
+          <div class="group">
+            <div class="relative w-full h-full">
+              <img
+                src="/assets/cat_product_2-DEQRs9u_.png"
+                alt="chair"
+                class="w-full h-auto overflow-hidden"
+              />
+              <!-- Product content start  -->
+              <div
+                class="opacity-0 transition-opacity ease-in-out duration-300 group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-0 left-0 right-0 text-left bg-[#3f403e] opacity-80 p-5 rounded-b-xl"
+                >
+                  <h4
+                    class="text-white text-sm font-bold capitalize object-cover"
+                  >
+                    Wing cahir
+                  </h4>
+                  <p class="text-white">3,584 products</p>
+                </div>
+              </div>
+              <!-- Product content end  -->
+            </div>
+          </div>
+          <!-- Single product end -->
+          <!-- Single product start -->
+          <div class="group">
+            <div class="relative">
+              <img
+                src="/assets/cat_product_3-ChdTLy_b.png"
+                alt="chair"
+                class="w-full h-auto overflow-hidden"
+              />
+              <!-- Product content start  -->
+              <div
+                class="opacity-0 transition-opacity ease-in-out duration-300 group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-0 left-0 right-0 text-left bg-[#3f403e] opacity-80 p-5 rounded-b-xl"
+                >
+                  <h4
+                    class="text-white text-sm font-bold capitalize object-cover"
+                  >
+                    Wing cahir
+                  </h4>
+                  <p class="text-white">3,584 products</p>
+                </div>
+              </div>
+              <!-- Product content end  -->
+            </div>
+          </div>
+          <!-- Single product end -->
+          <!-- Single product start -->
+          <div class="group">
+            <div class="relative">
+              <img
+                src="/assets/cat_product_4-2IYLNUuQ.png"
+                alt="chair"
+                class="w-full h-auto overflow-hidden"
+              />
+              <!-- Product content start  -->
+              <div
+                class="opacity-0 transition-opacity ease-in-out duration-300 group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-0 left-0 right-0 text-left bg-[#3f403e] opacity-80 p-5 rounded-b-xl"
+                >
+                  <h4
+                    class="text-white text-sm font-bold capitalize object-cover"
+                  >
+                    desk cahir
+                  </h4>
+                  <p class="text-white">154 products</p>
+                </div>
+              </div>
+              <!-- Product content end  -->
+            </div>
+          </div>
+          <!-- Single product end -->
+
+          <!-- Featured products container end -->
+        </div>
+      </div>
+    </section>
+    <!-- Top Catagories Section End  -->
+
+    <!-- Our products section start  -->
+    <section id="product" class="px-6">
+      <div class="container mb-20">
+        <!-- Our Products Heading start  -->
+        <div class="text-center mb-12">
+          <div>
+            <h2 class="text-2xl text-[#272343] font-bold capitalize mb-4">
+              our products
+            </h2>
+          </div>
+          <div>
+            <ul class="space-x-6">
+              <li
+                class="inline-block text-[#272343] text-base font-medium p-2 tracking-wider uppercase border-b-2 border-[#038053]"
+              >
+                <a href="#">all</a>
+              </li>
+              <li
+                class="inline-block text-base font-medium text-[#9A9CAA] p-2 tracking-wider uppercase"
+              >
+                <a href="#">newset</a>
+              </li>
+              <li
+                class="inline-block text-[#272343] text-base font-medium p-2 tracking-wider uppercase"
+              >
+                <a href="#">trending</a>
+              </li>
+              <li
+                class="inline-block text-base font-medium text-[#9A9CAA] p-2 tracking-wider uppercase"
+              >
+                <a href="#">best sellers</a>
+              </li>
+              <li
+                class="inline-block text-base font-medium text-[#9A9CAA] p-2 tracking-wider uppercase"
+              >
+                <a href="#">featured</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Our Products Heading End  -->
+
+        <!-- Our Products stat  -->
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 justify-between items-center gap-6 lg:grid-cols-4"
+        >
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_1-D8DGpZj9.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#01AD5A] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                New
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_2-DgMZencq.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_3-Be0yhKw6.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_4-BnZtpbFX.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_5-SeBV69w3.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image end  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_6-BT8wZL0m.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image end  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/cat_product_2-DEQRs9u_.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image end  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/cat_product_3-ChdTLy_b.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image end  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Our products container end -->
+        </div>
+        <!-- Our Products end  -->
+      </div>
+    </section>
+    <!-- Our products section End  -->
+
+    <!-- Clients Comments Section Start  -->
+    <section id="about" class="px-6 bg-bgSecond">
+      <div class="container mb-20 py-20">
+        <!-- Clients headings start  -->
+        <div class="mb-11 flex items-center justify-between">
+          <div class="text-2xl font-semibold text-[#272343]">
+            <h3 class="capitalize">what client says about us</h3>
+          </div>
+          <div class="flex items-center gap-8">
+            <div
+              class="size-11 bg-gray-200 rounded-full flex items-center justify-center hover:bg-hoverMain hover:text-white transition-all ease-in-out duration-300"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div
+              class="size-11 bg-gray-200 rounded-full flex items-center justify-center hover:bg-hoverMain hover:text-white transition-all ease-in-out duration-300"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Clients Heading End  -->
+
+        <div class="grid gap-8 grid-cols-1 w-full md:grid-cols-2">
+          <article class="p-10 shadow-md rounded-xl bg-white">
+            <div class="pl-6 border-l-2 border-[#029FAE] mb-14">
+              <p class="text-xl text-[#636270] font-normal capitalize">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vivamus sit amet mi nec massa tincidunt blandit et eu sem.
+                Maecenas laoreet ultrices diam dignissim posuere. Aenean
+                ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus.
+                In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit
+                et“
+              </p>
+            </div>
+            <!-- Clients Start  -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="size-10">
+                  <img
+                    src="/assets/avater_1-AEYgJoy2.png"
+                    alt="kristian watson"
+                    class="w-full"
+                  />
+                </div>
+                <div>
+                  <h2 class="text-xl font-medium text-[#272343] capitalize">
+                    Esther howard
+                  </h2>
+                  <p class="text-base font-normal text-[#9A9CAA] capitalize">
+                    fasion designer
+                  </p>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-quote-right text-7xl text-gray-300"></i>
+              </div>
+            </div>
+            <!-- Clients end  -->
+          </article>
+
+          <article class="p-10 shadow-md rounded-xl bg-white">
+            <div class="pl-6 border-l-2 border-[#029FAE] mb-14">
+              <p class="text-xl text-[#636270] font-normal capitalize">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vivamus sit amet mi nec massa tincidunt blandit et eu sem.
+                Maecenas laoreet ultrices diam dignissim posuere. Aenean
+                ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus.
+                In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit
+                et“
+              </p>
+            </div>
+            <!-- Clients Start  -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="size-10">
+                  <img
+                    src="/assets/avater_2-x6PvCIwK.png"
+                    alt="kristian watson"
+                    class="w-full"
+                  />
+                </div>
+                <div>
+                  <h2 class="text-xl font-medium text-[#272343] capitalize">
+                    kristian watson
+                  </h2>
+                  <p class="text-base font-normal text-[#9A9CAA] capitalize">
+                    fasion designer
+                  </p>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-quote-right text-7xl text-gray-300"></i>
+              </div>
+            </div>
+            <!-- Clients end  -->
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Clients Comments Section End  -->
+
+    <!-- Recently Aded Products Section Start  -->
+    <section class="px-6 border-b-2 divide-gray-200 mb-20">
+      <div class="container mb-20">
+        <!-- Recently AdedProducts Heading Start  -->
+        <div class="mb-11 flex items-center justify-between">
+          <div class="text-2xl font-semibold text-[#272343]">
+            <h3 class="capitalize">Recently Added</h3>
+          </div>
+          <div class="flex items-center gap-8">
+            <div
+              class="size-11 bg-gray-200 rounded-full flex items-center justify-center hover:bg-hoverMain hover:text-white transition-all ease-in-out duration-300"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div
+              class="size-11 bg-gray-200 rounded-full flex items-center justify-center hover:bg-hoverMain hover:text-white transition-all ease-in-out duration-300"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Recently Aded Heading End  -->
+
+        <!-- Recently Aded container start -->
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 justify-between items-center gap-6 lg:grid-cols-4"
+        >
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_1-D8DGpZj9.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#01AD5A] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                New
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_2-DgMZencq.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_3-Be0yhKw6.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+          <!-- Single product start -->
+          <div class="group">
+            <!-- Product image start  -->
+            <div class="relative mb-3.5">
+              <img
+                src="/assets/product_4-BnZtpbFX.png"
+                alt="chair"
+                style="width: 100%; height: auto"
+              />
+
+              <div
+                class="text-xs bg-[#F5813F] text-white px-4 py-3 rounded-md absolute top-4 left-4 cursor-pointer"
+              >
+                Sales
+              </div>
+              <div
+                class="w-11 h-11 bg-white text-gray-400 text-xl rounded-md flex items-center justify-center absolute top-4 right-4 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- Product image start  -->
+
+            <!-- Product content start  -->
+            <div class="flex items-center justify-between">
+              <div>
+                <h5
+                  class="text-base text-[#272343] font-bold capitalize mb-2.5 group-hover:text-hoverMain transition ease-in-out duration-300"
+                >
+                  Library stoot chair
+                </h5>
+                <p class="text-lg font-bold capitalize text-[#272343]">$120</p>
+              </div>
+              <div
+                class="w-11 h-11 bg-gray-200 rounded-md flex items-center justify-center group-hover:bg-hoverMain transition ease-in-out duration-300"
+              >
+                <i
+                  class="fa-solid fa-cart-shopping group-hover:text-white transition ease-in-out duration-300"
+                ></i>
+              </div>
+            </div>
+            <!-- Product content end  -->
+          </div>
+          <!-- Single product end -->
+          <!-- Recently Aded container end -->
+        </div>
+      </div>
+    </section>
+    <!-- Recently Aded Products Section End  -->
+
+    <!-- Footer Section start  -->
+    <footer id="pages">
+      <section class="px-6 bg-white border-b-2 border-gray-200 py-20">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between lg:gap-20 space-y-8"
+          >
+            <!-- Company information start  -->
+            <div class="w-full">
+              <div>
+                <img src="data:image/png;base64,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" alt="comforty" class="mb-6" />
+                <p class="text-base font-normal text-gray-500 mb-9">
+                  Vivamus tristique odio sit amet velit semper, eu posuere
+                  turpis interdum. Cras egestas purus
+                </p>
+              </div>
+              <div class="flex items-center justify-start gap-4">
+                <div
+                  class="group size-10 rounded-full hover:border-solid hover:border hover:border-hoverMain flex items-center justify-center transition-all duration-300"
+                >
+                  <i
+                    class="fa-brands fa-facebook text-[#636270] group-hover:text-hoverMain group-hover:transition group-hover:duration-300"
+                  ></i>
+                </div>
+                <div
+                  class="group size-10 rounded-full hover:border-solid hover:border hover:border-hoverMain flex items-center justify-center transition-all duration-300"
+                >
+                  <i
+                    class="fa-brands fa-twitter text-[#636270] group-hover:text-hoverMain group-hover:transition group-hover:duration-300"
+                  ></i>
+                </div>
+                <div
+                  class="group size-10 rounded-full hover:border-solid hover:border hover:border-hoverMain flex items-center justify-center transition-all duration-300"
+                >
+                  <i
+                    class="fa-brands fa-instagram text-[#636270] group-hover:text-hoverMain group-hover:transition group-hover:duration-300"
+                  ></i>
+                </div>
+                <div
+                  class="group size-10 rounded-full hover:border-solid hover:border hover:border-hoverMain flex items-center justify-center transition-all duration-300"
+                >
+                  <i
+                    class="fa-brands fa-pinterest text-[#636270] group-hover:text-hoverMain group-hover:transition group-hover:duration-300"
+                  ></i>
+                </div>
+                <div
+                  class="group size-10 rounded-full hover:border-solid hover:border hover:border-hoverMain flex items-center justify-center transition-all duration-300"
+                >
+                  <i
+                    class="fa-brands fa-youtube text-[#636270] group-hover:text-hoverMain group-hover:transition group-hover:duration-300"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <!-- Company information end  -->
+
+            <!-- Links Start  -->
+            <div class="w-full">
+              <div class="flex justify-between space-x-40">
+                <div>
+                  <h4 class="text-[#9A9CAA] text-sm font-medium uppercase mb-5">
+                    category
+                  </h4>
+
+                  <ul class="flex flex-col">
+                    <li
+                      class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                    >
+                      <a
+                        href="#"
+                        class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                        >sofa</a
+                      >
+                    </li>
+                    <li
+                      class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                    >
+                      <a
+                        href="#"
+                        class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                        >armchair</a
+                      >
+                    </li>
+                    <li
+                      class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                    >
+                      <a
+                        href="#"
+                        class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                        >wing chair</a
+                      >
+                    </li>
+                    <li
+                      class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                    >
+                      <a
+                        href="#"
+                        class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                        >desk chari</a
+                      >
+                    </li>
+                    <li
+                      class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                    >
+                      <a
+                        href="#"
+                        class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                        >wooden chari</a
+                      >
+                    </li>
+                    <li
+                      class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                    >
+                      <a
+                        href="#"
+                        class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                        >park bench</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div>
+                    <h4
+                      class="text-[#9A9CAA] text-sm font-medium uppercase mb-5"
+                    >
+                      support
+                    </h4>
+
+                    <ul class="flex flex-col">
+                      <li
+                        class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                      >
+                        <a
+                          href="#"
+                          class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                          >help & support</a
+                        >
+                      </li>
+                      <li
+                        class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                      >
+                        <a
+                          href="#"
+                          class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                          >tearms & conditions</a
+                        >
+                      </li>
+                      <li
+                        class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                      >
+                        <a
+                          href="#"
+                          class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                          >privacy policy</a
+                        >
+                      </li>
+                      <li
+                        class="inline-block text-[#272343] text-base font-normal capitalize py-3"
+                      >
+                        <a
+                          href="#"
+                          class="hover:text-hoverMain hover:border-b hover:border-b-hoverMain transition-all duration-300"
+                          >help</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Links end  -->
+
+            <!-- Newsletter start  -->
+            <div>
+              <div class="col-span-2 lg:col-span-1 sm:mt-8">
+                <div>
+                  <h4 class="text-[#9A9CAA] text-sm font-medium uppercase mb-5">
+                    newsletter
+                  </h4>
+                  <div class="mb-4 flex items-center w-full">
+                    <input
+                      type="text"
+                      placeholder="Your email"
+                      class="py-3.5 pl-5 placeholder-gray-400 rounded-lg focus:border-transparent focus:outline-none focus:ring-2 focus:ring-hoverMain mr-3 text-gray-500 w-2/3"
+                    />
+                    <button
+                      type="submit"
+                      class="text-white font-bold text-base py-3.5 px-6 bg-hoverMain rounded-lg capitalize w-1/3"
+                    >
+                      subscribe
+                    </button>
+                  </div>
+                  <div>
+                    <p class="text-base font-normal text-gray-500 mb-9">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nullam tincidunt erat enim.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Newsletter end  -->
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="container px-6 md:px-0 flex items-center justify-between py-6"
+        >
+          <div class="text-sm text-[#9A9CAA] capitalize">
+            @ 2021 - blogy - designed & develop by
+            <span class="text-black">zakirsoft</span>
+          </div>
+          <div>
+            <img
+              src="/assets/payment-CAymbr70.png"
+              alt="payment_method"
+              class="w-72 h-8 opacity-20"
+            />
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer Section end  -->
+  </body>
+</html>
